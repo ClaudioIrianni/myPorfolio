@@ -1,9 +1,10 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 :root {
-  --bg-primary: hsl(rgb(28, 56, 121));
-  --bg-secondary: hsl(rgb(96, 126, 170));
+  --bg-primary: rgb(194 3 3);
+  --bg-secondary: rgb(96, 126, 170);
   --text-color: rgb(230, 189, 95);
 }
 
@@ -77,6 +78,7 @@ textarea {
   letter-spacing: 3px;
   text-align: center;
   color: var(--text-color);
+  
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
@@ -159,7 +161,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #C20303;
+  background: var(--bg-primary);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -202,39 +204,31 @@ textarea {
 }
 
 .btn {
-  background: var(--bg-secondary);
   color: var(--text-color);
   text-transform: uppercase;
   letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   transition: transform 0.3s;
 }
 .btn:hover {
   transform: translateY(-3px);
 }
 .btn--bg {
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
+  padding: 1rem 8rem;
+  font-size: 2rem;
 }
 .btn--med {
   padding: 1.5rem 5rem;
   font-size: 1.6rem;
 }
 .btn--theme {
-  background: #C20303;
+  background: var(--bg-primary);
   color: #fff;
-}
-.btn--theme-inv {
-  color: #0062b9;
-  background: #fff;
-  border: 2px solid #0062b9;
-  box-shadow: none;
-  padding: calc(1.5rem - 2px) calc(5rem - 2px);
+  display: inline-block;
+  
 }
 
 .sec-pad {
@@ -247,11 +241,12 @@ textarea {
 }
 
 .text-primary {
-  color: #fff;
+  color: rgb(240, 184, 184);
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
   line-height: 1.6;
+  font-family: 'Courgette', cursive;
 }
 @media only screen and (max-width: 37.5em) {
   .text-primary {
@@ -290,7 +285,7 @@ canvas {
 }
 @media only screen and (max-width: 56.25em) {
   .home-hero__socials {
-    display: none;
+    top: 30%;
   }
 }
 .home-hero__mouse-scroll-cont {
@@ -363,6 +358,7 @@ canvas {
   }
 }
 .about__content-title {
+  text-align: center;
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 3rem;
@@ -903,7 +899,11 @@ canvas {
 }
 
 .skills {
+  align-items: center;
+  text-align: center;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .skills__skill {
