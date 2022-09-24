@@ -285,7 +285,8 @@ canvas {
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero__socials {
-    top: 30%;
+    top: 50%;
+  
   }
 }
 .home-hero__mouse-scroll-cont {
@@ -309,6 +310,13 @@ canvas {
   border: 2px solid var(--text-secondary-color);
   transition: background 0.3s;
 }
+
+@media only screen and (max-width:37.5em){
+  .home-hero__social-icon-link {
+    border: none;
+  }
+}
+
 .home-hero__social-icon-link:hover {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -328,11 +336,9 @@ canvas {
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero__content {
-    padding: 19rem 0 13rem 0;
-    margin: auto;
-    position: static;
-    transform: translate(0, 0);
-  }
+    margin: 0 auto;
+    position: absolute;
+      }
 }
 .home-hero__info {
   margin: 3rem auto 0 auto;
